@@ -9,6 +9,8 @@
 # What solutions exist?
 How would I know, man? It's all a conspiracy, those three-letter government agencies are passing notes to each other and "40 million" is just a code word.
 
+Seriously, if we had imagined pre-existing solutions then this imaginary problem would have been less interesting. I wouldn't go so far as to call this "40 million" thing a conspiracy but be honest: It is a weird coincidence.
+
 # What will we do about it?
 Web site. Daily content updates. Automatically search for "40 million" and compute a narrative that ties together 2-4 search results we haven't talked about in the past 7 days.
 
