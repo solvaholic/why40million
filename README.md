@@ -1,6 +1,6 @@
 # Why is it always "40 million"?
 
-# The problem @solvaholic imagines is :
+# The problem @solvaholic imagines
 40 million Americans have no health insurance. 40 million people suffer anxiety. Taylor Swift's cat scratch cost her 40 million dollars. Why is it always 40 million?!
 
 # Who has this problem?
