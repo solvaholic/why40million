@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Outline the `why40million` workflow
+title: Outline the why40million workflow
 date: 2017-04-22 09:00:00
 tags: why40million
 ---
