@@ -1,1 +1,8 @@
+title: why40million
+description: Why is it always "40 million"?
+google_analytics:
+show_downloads: false
 theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
