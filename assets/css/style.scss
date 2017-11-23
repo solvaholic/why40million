@@ -43,16 +43,6 @@ $medium-breakpoint: 720px !default;
   background: none;
 }
 
-header {
-  @include large {
-    height: 450px;
-    background-image: url("https://s3.amazonaws.com/solvaholic/images/solvaholic-dragon.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 120px;
-  }
-}
-
 body {
   @include medium {
     background: none;
