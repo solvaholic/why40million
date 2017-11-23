@@ -1,20 +1,3 @@
-<!---
-Constructed from https://opensource.guide/starting-a-project/#writing-a-readme
-and https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
--->
-
-<!---
-# Questions to answer
-- What does this project do?
-- Why is this project useful?
-- How do I get started?
-- Where can I get more help, if I need it?
-- How do you handle contributions?
-- What are the goals of the project?
-- Do you want to accept contributions?
-- Is the project ready for production?
--->
-
 # Why 40 Million?
 
 why40million is an excuse to build an app on BlueMix and try some things out with OpenWhisk, Watson, Natural Language Processing, and Natural Language Generation.
@@ -38,7 +21,7 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
 
@@ -52,7 +35,7 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+End with an example of getting some data out of the system or using it for a demo
 
 ## Running the tests
 
