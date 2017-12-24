@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#
+# bootstrap installs things and gets this project ready to hack/test/deploy.
+
+cd "$(dirname "$0")/.."
+PROJECT_ROOT=$(pwd -P)
+
+set -e
+
+exit 0
