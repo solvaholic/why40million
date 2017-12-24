@@ -1,46 +1,45 @@
----
-layout: default
-title: Outline the why40million workflow
-date: 2017-04-22 09:00:00
-tags: why40million
----
+Outline the `why40million` workflow
 
-# {{ page.title }}
+> What will we do about it?
+>
+> Web site. Daily content updates. Automatically search for “40 million” and compute a narrative that ties together 2-4 search results we haven’t talked about in the past 7 days.
 
-* StartJob
-  * Scheduled job calls initial API
-* GetPages
-  * Get list of URLs
-  * Hash URLs for database keys
-  * Push URL-and-hash table into MQ?
-    Call SelectPages with URL-and-hash table?
-* SelectPages
-  * Filter out pages we've used in the past 7 days
-  * Select a suitable pair of pages
-    ```
-    pair-found = False
-    While not pair-found
-      If first-two-pages in used-pairs then pop second-page
-      Else pair-found = True
-    ```
-  * Update first-page and second-page in used pages, with date
-  * Add pair to used-pairs, with date
-* GenerateStory
-  * Convert URLs to input text?
-  * Call language generator to make title?
-  * Call language generator to make body
-  * Convert result to Markdown
-  * Add appropriate front matter, for example:
-    ```
-    ---
-    layout: default
-    title: Catchy or distracting title
-    date: 2017-02-06 21:13:41
-    tags: why40million 5-topics-from-the-docs
-    ---
-    ```
-* PublishStory
-  * Push the .md file as
-    `solvaholic/why40million/_posts/YYYY-MM-DD-Title.md`
-* FinishJob
-  * Close connections, sweep up crumbs, etc?
+# Why
+
+You can do it for the practice, or you can do it for the fun backstory. Or both.
+
+For more information about the why40million project and why we're doing it, checkout [this project's homepage](https://solvaholic.github.io/why40million/).
+
+# What
+
+In general, what steps will `why40million` follow?
+
+## StartJob
+
+Something has to start the daily process. Go!
+
+## GetPages
+
+Go find pages and posts that mention "40 million". Ingest them for sorting and selection.
+
+## SelectPages
+
+Sort/filter/select 2-4 pages to use for this run. Select resources we haven't used in the past 7 days.
+
+## GenerateStory
+
+Read the selected pages and compute a narrative that ties them together.
+
+## PublishStory
+
+Publish the story. Um .. put it where visitors can browse to it. Maybe also announce it somewhere.
+
+## FinishJob
+
+Probably we're just done. But if there's something to clean up or put away then do that here.
+
+# How
+
+[The above section](#What) outlines the general steps. How will `why40million` perform each of those?
+
+We'll hash that out in [notes.md](notes.md) and bring implemented solution details here.
