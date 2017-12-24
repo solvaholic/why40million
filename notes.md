@@ -6,12 +6,12 @@ In general, what steps will `why40million` follow? And how will it perform them?
 
 We can trigger the workflow and select documents manually, so if we need to pick a thing to work on first then let's do them in this order:
 
-1. [GenerateStory](#GenerateStory) - This is the meat. The rest is presentation.
-2. [SelectPages](#SelectPages) or [PublishStory](#PublishStory)
-2. [PublishStory](#PublishStory) or [SelectPages](#SelectPages)
-4. [GetPages](#GetPages)
-5. [StartJob](#StartJob)
-6. [FinishJob](#FinishJob)
+1. [GenerateStory](#generatestory) - This is the meat. The rest is presentation.
+2. [SelectPages](#selectpages) or [PublishStory](#publishstory)
+2. [PublishStory](#publishstory) or [SelectPages](#selectpages)
+4. [GetPages](#getpages)
+5. [StartJob](#startjob)
+6. [FinishJob](#finishjob)
 
 ## StartJob
 

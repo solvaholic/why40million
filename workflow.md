@@ -40,6 +40,6 @@ Probably we're just done. But if there's something to clean up or put away then 
 
 # How
 
-[The above section](#What) outlines the general steps. How will `why40million` perform each of those?
+[The above section](#what) outlines the general steps. How will `why40million` perform each of those?
 
 We'll hash that out in [notes.md](notes.md) and bring implemented solution details here.
