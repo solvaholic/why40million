@@ -1,8 +1,17 @@
 Gather notes here while we discover how to implement `why40million`.
 
-# What
+# How?
 
-In general, what steps will `why40million` follow?
+In general, what steps will `why40million` follow? And how will it perform them?
+
+We can trigger the workflow and select documents manually, so if we need to pick a thing to work on first then let's do them in this order:
+
+1. [GenerateStory](#GenerateStory) - This is the meat. The rest is presentation.
+2. [SelectPages](#SelectPages) or [PublishStory](#PublishStory)
+2. [PublishStory](#PublishStory) or [SelectPages](#SelectPages)
+4. [GetPages](#GetPages)
+5. [StartJob](#StartJob)
+6. [FinishJob](#FinishJob)
 
 ## StartJob
 
@@ -41,10 +50,12 @@ Sort/filter/select 2-4 pages to use for this run. Select resources we haven't us
 
 Read the selected pages and compute a narrative that ties them together.
 
+> Assumption: We'll publish this story as a post in this project's Pages site or run it through a static site generator and push it to AWS S3.
+
 * GenerateStory
-  * Convert URLs to input text?
-  * Call language generator to make title?
-  * Call language generator to make body
+  * Get input text
+  * dot dot dot
+  * Call language generator to make title and body
   * Convert result to Markdown
   * Add appropriate front matter, for example:
     ```
@@ -52,7 +63,7 @@ Read the selected pages and compute a narrative that ties them together.
     layout: default
     title: Catchy or distracting title
     date: 2017-02-06 21:13:41
-    tags: why40million 5-topics-from-the-docs
+    tags: why40million
     ---
     ```
 
