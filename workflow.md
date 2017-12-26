@@ -43,3 +43,46 @@ Probably we're just done. But if there's something to clean up or put away then 
 [The above section](#what) outlines the general steps. How will `why40million` perform each of those?
 
 We'll hash that out in [notes.md](notes.md) and bring implemented solution details here.
+
+## GenerateStory
+
+Read the selected pages and compute a narrative that ties them together.
+
+TODO: Fill in that "dot dot dot".
+
+* Given some configuration and a document URL:
+
+  ```
+  CUSER=<UserName>
+  CPASS=<Password>
+  NLU_URL="https://gateway.watsonplatform.net/natural-language-understanding/api"
+
+  cat > /tmp/payload.json <<EOM
+  {
+    "url": "https://www.snopes.com/russians-drill-nuclear-strike/",
+    "features": {
+      "concepts": {
+        "limit": 20
+      },
+      "entities": {
+        "limit": 20
+      }
+    },
+    "clean": true,
+    "return_analyzed_text": true
+  }
+  EOM
+  ```
+
+* Distill the essence of the sample documents:
+
+  ```
+  curl -X POST --user "$CUSER":"$CPASS" \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  -d @/tmp/payload.json \
+  "$NLU_URL/v1/analyze?version=2017-02-27"
+  ```
+
+* Dot dot dot.
+* Profit.
