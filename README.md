@@ -1,10 +1,14 @@
 # Why 40 Million?
 
-why40million is an excuse to build an app on BlueMix and try some things out with OpenWhisk, Watson, Natural Language Processing, and Natural Language Generation.
+40 million Americans have no health insurance. 40 million people suffer anxiety. Taylor Swift’s cat scratch cost her 40 million dollars. Why is it always 40 million?!
 
-For more information, go to https://solvaholic.github.io/why40million/
+For more about this question, go to https://solvaholic.github.io/why40million/
 
-This project is currently not open to contributions.
+I'd archived this repo because I lost interest in making the app. I unarchived it because I've developed a new itch in the same area:
+
+"Why 40 million?" was about _40 million_ being a code word connecting mentions and messages I believe were orchestrated to achieve some objective. For example to prime (humans') perceptions by ~subtly recalling associated memories.
+
+Now it's about how a person would go about doing that :point_up:. If I want shoppers in my town to crave a brand or product, or activists to adopt a term or message, how would I go about that? How would I identify available providers and shop their services? How would I pay them, and how much would it cost?
 
 <!---
 ## Getting Started
