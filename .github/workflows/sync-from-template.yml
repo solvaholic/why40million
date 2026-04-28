@@ -1,0 +1,47 @@
+---
+#
+# Run this workflow to sync changes from the template repository.
+# Uses .templatesyncignore to specify files that should not be synced.
+#
+name: Sync changes from template
+
+on:
+  # Run at 0517 UTC each Friday
+  schedule:
+    - cron: "17 5 * * 5"
+
+  # Run when this file changes
+  push:
+    paths:
+      - .github/workflows/sync-from-template.yml
+
+  # Run when manually triggered
+  workflow_dispatch:
+
+jobs:
+  sync-from-template:
+    # Do not run on the template repository itself
+    if: github.repository != 'solvaholic/template'
+    name: Sync changes from solvaholic/template
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Sync from template
+        uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          source_repo_path: solvaholic/template
+          upstream_branch: main
+          pr_branch_name_prefix: chore/sync-from-template
+          pr_title: Pull updates from solvaholic/template
+          pr_body: |
+            This PR syncs changes from the template repository.
+            
+            Please review changes carefully before merging.
+          pr_labels: template-sync,automated

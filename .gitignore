@@ -1,0 +1,30 @@
+Braindump.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.python-version
+
+# uv
+.uv/
+
+# Ruff / mypy / pytest caches
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+
+# MkDocs build output
+site/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# Local env files
+.env
+.env.local

@@ -1,0 +1,22 @@
+# Files and directories to exclude when syncing from template repository
+# Follows .gitignore syntax
+
+# Preserve workflows (except let template update sync-from-template.yml)
+.github/workflows/*
+!.github/workflows/sync-from-template.yml
+
+# Preserve ignore rules
+.gitignore
+
+# Preserve project docs and config
+README.md
+AGENTS.md
+.github/copilot-instructions.md
+.vscode
+
+# Project-specific files the template doesn't know about
+mkdocs.yml
+pyproject.toml
+uv.lock
+docs/
+scripts/
