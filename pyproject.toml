@@ -1,0 +1,22 @@
+[project]
+name = "why40million"
+version = "0.1.0"
+description = "Weekly blog chasing the suspiciously recurring '40 million' coincidence."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.5",
+    "mkdocs-rss-plugin>=1.13",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
